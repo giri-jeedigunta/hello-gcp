@@ -5,6 +5,6 @@ WORKDIR /app
 
 COPY . .
 RUN ls -la
-RUN pnpm install --production
+RUN yarn install --production
 
 CMD [ "node", "index.js" ]
